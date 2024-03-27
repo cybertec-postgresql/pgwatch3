@@ -42,6 +42,7 @@ services:
       - "./grafana/postgres_datasource.yml:/etc/grafana/provisioning/datasources/pg_ds.yml"
       - "./grafana/postgres_dashboard.yml:/etc/grafana/provisioning/dashboards/pg_db.yml"
       - "./grafana/postgres/v10:/var/lib/grafana/dashboards"
+      #- "./grafana/postgres/v11:/var/lib/grafana/dashboards"
     depends_on:
       postgres:
         condition: service_healthy
